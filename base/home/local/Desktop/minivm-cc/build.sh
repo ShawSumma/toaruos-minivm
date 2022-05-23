@@ -1,0 +1,22 @@
+cc -O3 -o main.o -c main.c 
+cc -O3 -o cpp.o -c cpp.c 
+cc -O3 -o debug.o -c debug.c 
+cc -O3 -o dict.o -c dict.c 
+cc -O3 -o gen.o -c gen.c 
+cc -O3 -o lex.o -c lex.c 
+cc -O3 -o vector.o -c vector.c 
+cc -O3 -o parse.o -c parse.c 
+cc -O3 -o buffer.o -c buffer.c 
+cc -O3 -o map.o -c map.c 
+cc -O3 -o error.o -c error.c 
+cc -O3 -o path.o -c path.c 
+cc -O3 -o file.o -c file.c 
+cc -O3 -o set.o -c set.c 
+cc -O3 -o encoding.o -c encoding.c 
+cc -O3 -o vm/vm/asm.o -c vm/vm/asm.c 
+cc -O3 -o vm/vm/gc.o -c vm/vm/gc.c 
+cc -O3 -o vm/vm/jump.o -c vm/vm/jump.c 
+cc -O3 -o vm/vm/reguse.o -c vm/vm/reguse.c 
+cc -O3 -o vm/vm/int/run.o -c vm/vm/int/run.c 
+cc -O3 -o vm/vm/int/comp.o -c vm/vm/int/comp.c 
+cc -O3 -o minivm-cc main.o cpp.o debug.o dict.o gen.o lex.o vector.o parse.o buffer.o map.o error.o path.o file.o set.o encoding.o vm/vm/asm.o vm/vm/gc.o vm/vm/jump.o vm/vm/reguse.o vm/vm/int/run.o vm/vm/int/comp.o  -lm
